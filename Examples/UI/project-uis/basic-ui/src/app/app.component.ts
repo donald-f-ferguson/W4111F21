@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'basic-ui, V0.1';
+  isCollapsed = true;
 }
