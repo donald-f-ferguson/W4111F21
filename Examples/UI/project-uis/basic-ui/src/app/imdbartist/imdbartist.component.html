@@ -1,0 +1,53 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card" style="width: 50rem">
+        <div class="card-header">
+          <div class="row">
+            <div class="col">
+              <h3>IMDB Information</h3>
+            </div>
+            <div class="col">
+              <button class="btn btn-link collapsed float-end" data-toggle="collapse" data-target="#collapse-L1"
+                      aria-expanded="true" aria-controls="collapse1" (click)="toggleCard()">
+                <i class="fa fa-plus-square" style="font-size:18px;color:black"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="card-body" *ngIf="toggleImdb">Some information about
+          <a href="https://www.imdb.com/interfaces/">IMDB</a> artists will go here!
+            <label>Type in an artist's name: </label><input type="text" class="form-control"
+                                                    [(ngModel)]="artistName">
+          <p></p>
+            <button type="button" (click)="onLookup()" class="btn btn-primary">Search</button>
+          <!-- You typed: <span *ngIf="artistName"> "{{ artistName }}" </span> -->
+          <p></p>
+          <table class="table table-striped">
+            <thead>
+            <tr>
+              <th scope="col">Primary Name</th>
+              <th scope="col">Birth Year</th>
+              <th scope="col">Death Year</th>
+              <th scope="col">Primary Professions</th>
+              <th scope="col">Known For Titles</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let p of artistInfo; index as i">
+              <td>
+                {{ p.primary_name }}
+              </td>
+              <td>{{p.birth_year }}</td>
+              <td>{{ p.death_year }}</td>
+              <td>{{ p.primary_profession }}</td>
+              <td>{{ p.known_for_titles }}</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="card-footer">That was cool!</div>
+      </div>
+    </div>
+  </div>
+</div>
+
