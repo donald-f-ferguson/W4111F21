@@ -15,6 +15,9 @@
   <!-- Custom styles for this template -->
   <link href="css/business-frontpage.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 </head>
 
 <body>
@@ -71,13 +74,27 @@
   <!-- Page Content -->
   <div class="container">
 
-      <div class="row">
-          <div class="col-auto">
-              <h3>Office Hours Calendar</h3>
-              <iframe src="https://calendar.google.com/calendar/embed?src=columbia.edu_09mpl0ggeb1uca6t6c4svsplgg%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-          </div>
+      <hr>
+      <h3>Instructors' Office Hours</b>
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-L2"
+                  aria-expanded="true" aria-controls="collapse1">
+              <i class="fa fa-plus-square" style="font-size:18px;color:black"></i>
+          </button>
+      </h3>
+      <div id="collapse-L2" class="collapse" aria-labelledby="heading2">
+          <iframe src="https://calendar.google.com/calendar/embed?src=columbia.edu_09mpl0ggeb1uca6t6c4svsplgg%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
       </div>
-      <div class="row">
+      <hr>
+    <hr>
+      <h3>Instructors' Bios</b>
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-L3"
+                  aria-expanded="true" aria-controls="collapse1">
+              <i class="fa fa-plus-square" style="font-size:18px;color:black"></i>
+          </button>
+      </h3>
+
+      <div id="collapse-L3" class="collapse">
+          <div class="row">
           <div class="col-md-4 mb-5">
               <img src="./images/ferguson2.jpeg">
           </div>
@@ -129,17 +146,18 @@ She has used what she has learned from this course in every internship and is lo
               <h2>Azhaan Zahabee (TA)</h2>
               <hr>
               <p>
-                I am a third semester student pursuing M.S. in Computer Science on the Software Systems track. 
+                I am a third semester student pursuing M.S. in Computer Science on the Software Systems track.
                 I have taken COMS 4111 last semester and will be the TA for the course this semester.
-                I am from India and did my undergrad from IIT (ISM), Dhanbad in Computer Science and Engineering. 
-                This summer I interned at Amazon in the AWS Aurora MySQL team. This class gave me a lot of useful 
-                knowledge of Databases that helped me in my internship hunt. After completing my masters, I will be 
+                I am from India and did my undergrad from IIT (ISM), Dhanbad in Computer Science and Engineering.
+                This summer I interned at Amazon in the AWS Aurora MySQL team. This class gave me a lot of useful
+                knowledge of Databases that helped me in my internship hunt. After completing my masters, I will be
                 returning full time at Amazon.
                 I am excited to meet you all in person and work with you this semester.
               </p>
           </div>
       </div>
-
+      </div>
+      <hr>
   </div>
   <!-- /.container -->
   <!-- Footer -->
